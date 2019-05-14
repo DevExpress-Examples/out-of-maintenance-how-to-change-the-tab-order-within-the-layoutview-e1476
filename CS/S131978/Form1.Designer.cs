@@ -26,7 +26,6 @@ namespace S131978 {
             this.components = new System.ComponentModel.Container();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nwindDataSet = new S131978.nwindDataSet();
             this.layoutView1 = new DevExpress.XtraGrid.Views.Layout.LayoutView();
             this.colProductID = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colProductID = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
@@ -47,10 +46,8 @@ namespace S131978 {
             this.colReorderLevel = new DevExpress.XtraGrid.Columns.LayoutViewColumn();
             this.layoutViewField_colReorderLevel = new DevExpress.XtraGrid.Views.Layout.LayoutViewField();
             this.layoutViewCard1 = new DevExpress.XtraGrid.Views.Layout.LayoutViewCard();
-            this.productsTableAdapter = new S131978.nwindDataSetTableAdapters.ProductsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colProductID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colProductName)).BeginInit();
@@ -80,12 +77,6 @@ namespace S131978 {
             // productsBindingSource
             // 
             this.productsBindingSource.DataMember = "Products";
-            this.productsBindingSource.DataSource = this.nwindDataSet;
-            // 
-            // nwindDataSet
-            // 
-            this.nwindDataSet.DataSetName = "nwindDataSet";
-            this.nwindDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // layoutView1
             // 
@@ -265,10 +256,6 @@ namespace S131978 {
             this.layoutViewCard1.Name = "layoutViewCard1";
             this.layoutViewCard1.Text = "TemplateCard";
             // 
-            // productsTableAdapter
-            // 
-            this.productsTableAdapter.ClearBeforeFill = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,7 +267,6 @@ namespace S131978 {
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nwindDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colProductID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutViewField_colProductName)).EndInit();
@@ -299,9 +285,7 @@ namespace S131978 {
         #endregion
 
         private DevExpress.XtraGrid.GridControl gridControl1;
-        private nwindDataSet nwindDataSet;
         private System.Windows.Forms.BindingSource productsBindingSource;
-        private S131978.nwindDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
         private DevExpress.XtraGrid.Views.Layout.LayoutView layoutView1;
         private DevExpress.XtraGrid.Columns.LayoutViewColumn colProductID;
         private DevExpress.XtraGrid.Views.Layout.LayoutViewField layoutViewField_colProductID;
